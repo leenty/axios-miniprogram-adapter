@@ -14,7 +14,7 @@ const isJSONstr = str => {
     return false
   }
 }
-export default function mpAdapter (config: AxiosRequestConfig) :AxiosPromise {
+export default function mpAdapter (config: AxiosRequestConfig & WechatMiniprogram.RequestOption) :AxiosPromise {
   const request = getRequest()
   return new Promise((resolve, reject) => {
     let requestTask: void | WechatMiniprogram.RequestTask
@@ -44,7 +44,8 @@ export default function mpAdapter (config: AxiosRequestConfig) :AxiosPromise {
       },
       complete () {
         requestTask = undefined
-      }
+      },
+      dataType: config.dataType || 'json'
     }
 
     // HTTP basic authentication

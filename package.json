@@ -1,5 +1,5 @@
 {
-  "name": "axios-miniprogram-adapter",
+  "name": "@leenty/axios-miniprogram-adapter",
   "version": "0.3.2",
   "description": "Axios adapter for miniprogram",
   "main": "dist/index.js",
@@ -24,10 +24,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bigMeow/axios-miniprogram-adapter.git"
+    "url": "git://github.com/leenty/axios-miniprogram-adapter.git"
   },
   "bugs": {
-    "url": "https://github.com/bigMeow/axios-miniprogram-adapter/issues"
+    "url": "https://github.com/leenty/axios-miniprogram-adapter/issues"
   },
   "keywords": [
     "axios",
